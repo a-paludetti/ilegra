@@ -43,7 +43,8 @@ public class ReadFile implements Runnable {
     private void outFile(Path file) {
     }
 
-    private void processFile(Path file) {
+    private void processFile(Path path) {
+        new FileProcessor().process(path.toFile());
     }
 
     public void verifyFolders(){
